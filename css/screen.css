@@ -84,7 +84,16 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: black;
 @media only screen and (max-width: 768px) { .header .btn { display: none; } }
 
 /*-----main----------------------------------------------------------- */
-/*---------------------------------------------------------------- */
+.main { background-image: url('../img/bg-main.jpg?1409868272'); color: white; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.main .container { padding: 130px 500px 160px 100px; }
+@media only screen and (max-width: 1170px) { .main .container { padding: 115px 255px 130px 50px; } }
+@media only screen and (max-width: 768px) { .main .container { text-align: center; padding: 40px 50px 45px; } }
+.main .btn { display: none; }
+@media only screen and (max-width: 768px) { .main .btn { display: inline-block; font-size: 12px; padding: 10px 10px 7px; } }
+
+/*-----cam----------------------------------------------------------- */
+.cam { height: 100px; }
+
 /*---------------------------------------------------------------- */
 /*---------------------------------------------------------------- */
 /*---------------------------------------------------------------- */
@@ -114,8 +123,25 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: black;
 @media only screen and (max-width: 768px) { .for-nav { display: inline-block; } }
 .for-nav span { background: url('../img/icons-s9a188e09e5.png') 0 -494px no-repeat; width: 11px; height: 7px; display: inline-block; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 
-/*---------------------------------------------------------------- */
-/*---------------------------------------------------------------- */
+/*-----content----------------------------------------------------------- */
+.title { font-size: 56px; font-weight: normal; margin-bottom: 25px; }
+@media only screen and (max-width: 1170px) { .title { font-size: 40px; margin-bottom: 10px; } }
+@media only screen and (max-width: 768px) { .title { font-size: 20px; margin-bottom: 5px; } }
+
+.title-small { font-size: 32px; font-weight: bold; }
+@media only screen and (max-width: 1170px) { .title-small { font-size: 24px; } }
+@media only screen and (max-width: 768px) { .title-small { font-size: 12px; line-height: 20px; margin-bottom: 15px; } }
+
+.content { font-size: 24px; line-height: 28px; margin-bottom: 20px; }
+@media only screen and (max-width: 1170px) { .content { font-size: 20px; line-height: 20px; margin-bottom: 10px; } }
+@media only screen and (max-width: 768px) { .content { font-size: 10px; line-height: 10px; margin-bottom: 3px; } }
+
+/*----heatcam------------------------------------------------------------ */
+.heatcam { color: #fc4236; font-weight: bold; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.heatcam span { color: white; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.heatcam:hover { color: white; }
+.heatcam:hover span { color: #fc4236; }
+
 /*---------------------------------------------------------------- */
 /*---------------------------------------------------------------- */
 /*---------------------------------------------------------------- */

@@ -45,10 +45,28 @@
 			display: none
 	
 /*-----main-----------------------------------------------------------*/
-// .main
-// 	height: 100px
-// 	background-color: #000 
-/*----------------------------------------------------------------*/
+//.main-out //for popup
+.main
+	background-image: image-url('bg-main.jpg')
+	color: #FFF 
+	+cover
+	.container
+		padding: 130px 500px 160px 100px 
+		+r(tablet)
+			padding: 115px 255px 130px 50px 
+		+r(mobile)
+			text-align: center	
+			padding: 40px 50px 45px 			
+	.btn
+		display: none
+		+r(mobile)
+			display: inline-block	
+			font-size: 12px
+			padding: 10px 10px 7px 			
+
+/*-----cam-----------------------------------------------------------*/
+.cam
+	height: 100px
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
@@ -130,8 +148,51 @@
 		+s(i-nav)	
 		display: inline-block
 		+transition		
-/*----------------------------------------------------------------*/
-/*----------------------------------------------------------------*/
+/*-----content-----------------------------------------------------------*/
+.title
+	font-size: 56px
+	font-weight: normal
+	margin-bottom: 25px
+	+r(tablet)
+		font-size: 40px
+		margin-bottom: 10px
+	+r(mobile)
+		font-size: 20px
+		margin-bottom: 5px		
+.title-small
+	font-size: 32px
+	font-weight: bold
+	+r(tablet)
+		font-size: 24px
+	+r(mobile)
+		font-size: 12px
+		line-height: 20px
+		margin-bottom: 15px 				
+.content
+	font-size: 24px
+	line-height: 28px
+	margin-bottom: 20px
+	+r(tablet)
+		font-size: 20px
+		line-height: 20px
+		margin-bottom: 10px
+	+r(mobile)		
+		font-size: 10px	
+		line-height: 10px
+		margin-bottom: 3px
+/*----heatcam------------------------------------------------------------*/
+.heatcam
+	color: #FC4236 
+	font-weight: bold
+	+transition
+	span
+		color: #fff 
+		+transition
+	&:hover
+		color: #fff
+		span
+			color: #FC4236 
+
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
