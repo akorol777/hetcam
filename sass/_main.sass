@@ -1,0 +1,138 @@
+/*-----header-----------------------------------------------------------*/
+.header
+	padding: 15px 70px 15px 100px 
+	position: relative
+	+clr
+	+r(tablet)
+		padding: 5px 50px 15px 
+	+r(mobile)
+		padding: 0
+		border-bottom: 1px solid $border-c 
+		padding-right: 30px	
+	.logo
+		margin: 20px 50px 0 0 
+		+r(tablet)
+			width: 120px
+			margin-right: 35px
+		+r(mobile)
+			width: 90px
+			margin-top: 10px
+			margin-left: 30px 
+			margin-right: 0
+		img
+			width: 100%
+			height: auto 
+	.header__call
+		float: right
+		text-align: right
+		+r(tablet)
+			margin-top: 5px
+	.header__phone
+		font-family: $Sans_l
+		font-size: 20px 
+		line-height: 32px 
+		display: block
+		margin-bottom: 5px
+		+r(tablet)
+			font-size: 12px
+			line-height: 20px
+			margin-bottom: 2px
+		.big
+			font-family: $Sans_b	
+	.btn
+		display: block	
+		+r(mobile)
+			display: none
+	
+/*-----main-----------------------------------------------------------*/
+// .main
+// 	height: 100px
+// 	background-color: #000 
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+
+
+
+
+
+
+  
+
+
+
+/*-----logo-----------------------------------------------------------*/
+.logo
+	float: left
+	+hide-text
+/*-----nav-----------------------------------------------------------*/
+.nav
+	float: left
+	margin-top: 20px
+	+clr
+	+transition
+	+r(mobile)
+		position: absolute
+		top: 13px
+		left: 0
+		border-right: 1px solid $border-c
+		max-height: 0
+		overflow: hidden 
+		//border-bottom: 1px solid $border-c  
+	li
+		float: left
+		+r(mobile)
+			float: none	
+		+r(mobile)
+			border-bottom: 1px solid $border-c 
+	a
+		font-family: $Lycinda
+		font-size: 16px
+		line-height: 32px
+		padding: 0 10px
+		+r(tablet)
+			font-size: 12px
+			line-height: 20px
+		+r(mobile)
+			background-color: #FFF
+			width: 100% 
+			display: block
+			color: #446CB3
+			font-size: 12px
+			line-height: 35px
+			font-family: $Myriad
+			padding-left: 20px 
+			padding-right: 20px  	
+			+box
+			+transition
+			&:hover
+				background-color: #ddf 		
+		&:hover
+			text-decoration: underline 
+			+r(mobile) 
+				text-decoration: none
+.nav-open
+	max-height: 200px				
+.for-nav
+	display: none
+	float: left
+	border-right: 1px solid $border-c
+	padding: 5px 19px 8px
+	&:hover
+		span
+			+transform(scaleX(1.7))
+	+r(mobile)
+		display: inline-block	
+	span
+		+s(i-nav)	
+		display: inline-block
+		+transition		
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/

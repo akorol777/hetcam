@@ -1,0 +1,21 @@
+$default-transition-duration: 0.3s
+a
+	text-decoration: none	
+body,a
+	font-family: $Myriad
+	color: #000 		
+.wrap
+	width: 100%
+	min-width: 320px
+	height: 100%
+	background-color: #fff
+.container
+	margin: 0 auto
+	max-width: 1170px
+	+box
+	+r(tablet)
+		max-width: 768px
+	+r(mobile)
+		min-width: 320px	 
+		
+	
