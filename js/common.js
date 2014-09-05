@@ -9,9 +9,23 @@ $(document).ready(function() {
 		return false							
 	});	
 
-	$(document).click(function(){
-		$('.nav').removeClass('nav-open');								
+
+
+	$('#for-popup1').click(function(){
+		$('#popup1').toggleClass('popup-open');
+		return false							
 	});
+
+	$('.popup').click(function(){
+		return false							
+	});		
+
+
+	$(document).click(function(){
+		$('.nav').removeClass('nav-open');
+		$('#popup1').removeClass('popup-open');								
+	});
+
 
 });
 

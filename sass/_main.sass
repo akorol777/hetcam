@@ -45,7 +45,25 @@
 			display: none
 	
 /*-----main-----------------------------------------------------------*/
-//.main-out //for popup
+.main-out
+	position: relative
+	.popup-out
+		position: absolute
+		top: 140px
+		right: 100% 
+		display: inline-block
+		+transition
+		+r(tablet)
+			top: 95px
+		+r(mobile)
+			position: static
+			display: block
+	.popup-open		
+		right: 10%
+		+r(tablet)		
+			right: 20%
+	.popup
+		margin: 0 auto 				
 .main
 	background-image: image-url('bg-main.jpg')
 	color: #FFF 
@@ -62,7 +80,8 @@
 		+r(mobile)
 			display: inline-block	
 			font-size: 12px
-			padding: 10px 10px 7px 			
+			padding: 10px 10px 7px 
+						
 
 /*-----cam-----------------------------------------------------------*/
 .cam
@@ -193,7 +212,79 @@
 		span
 			color: #FC4236 
 
-/*----------------------------------------------------------------*/
+/*-----popup-----------------------------------------------------------*/
+.popup
+	width: 270px
+	background-color: #FFF
+	padding: 17px 15px 15px 15px 
+	+box 
+	+r(tablet)
+		width: 190px
+		padding: 13px 11px 13px 11px 
+	+r(mobile)
+		width: 160px
+		padding: 20px 0px 13px 				
+	.popup__content
+		text-align: center
+		font-size: 18px
+		line-height: 16px
+		margin-bottom: 20px 
+		+r(tablet)
+			font-size: 12px
+			line-height: 11px 
+			margin-bottom: 13px
+		+r(mobile)
+			line-height: 10px 
+			margin-bottom: 20px			
+		.big
+			text-transform: uppercase
+			font-weight: bold
+	.popup__form
+		display: block
+		+box		
+		+r(mobile)
+			padding: 0 11px 
+	.popup__input
+		width: 100%
+		border: 2px solid $border-c
+		font-size: 13px
+		line-height: 20px
+		font-family: $Sans
+		padding: 10px 15px
+		margin-bottom: 15px
+		+box
+		+transition
+		+r(tablet)
+			font-size: 10px
+			line-height: 14px
+			padding: 6px 9px
+			margin-bottom: 10px	
+		+r(mobile)
+			font-size: 8px					     
+		+placeholder
+			color: #3C3C3C
+			+r(tablet)
+				font-size: 10px
+				line-height: 14px 
+			+r(mobile)
+				font-size: 8px
+		&:focus
+			border: 2px solid #0072BC	
+			+placeholder
+				font-size: 0 						
+	.btn
+		width: 100%	
+		background-color: #0072BC
+		&:hover
+			background-color: lighten(#0072bc, 10%) 	
+		+r(tablet)
+			padding-top: 9px
+			padding-bottom: 9px
+		+r(mobile)
+			letter-spacing: -0.1em  
+			background-color: $btn-c 
+			&:hover
+				background-color: lighten($btn-c, 10%) 						  			
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
