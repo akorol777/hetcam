@@ -163,6 +163,10 @@
 .benef
 	.container
 		padding: 50px 230px 0
+		+r(tablet)
+			padding: 35px 120px 20px 120px
+		+r(mobile)
+			padding: 20px 20px 20px			 
 	.heatcam
 		&:hover	
 			color: #000 
@@ -173,26 +177,53 @@
 		font-size: 37px
 		line-height: 33px
 		margin-bottom: 0
+		+r(tablet)
+			font-size: 24px
+			line-height: 22px
+			padding: 0 30px 
+		+r(mobile)
 	.benef-item
 		width: 100%
 		background-image: image-url('bg-benef.png')
 		background-repeat: no-repeat
-		background-position: 100% 47% 
+		background-position: 100% 50% 
+		-webkit-background-size: 97% 65% 
+		-o-background-size: 97% 65%
+		background-size: 97% 65% 
 		+clr
+		+r(tablet)
+			background-position: 100% 55% 
+			-webkit-background-size: 95% 64% 
+			-o-background-size: 95% 64%
+			background-size: 95% 64%	
+		+r(mobile)
+			background: none 		
 		li
 			float: left
 			width: 50%
 			text-align: center
 			padding: 55px 60px 65px
 			+box
+			+r(tablet)
+				padding: 35px 60px 			
 			+r(mobile)
 				float: none
-				width: 100%	
+				width: 100%
+				padding: 20px 60px 0 					
 	.benef__text
 		font-size: 24px
 		line-height: 22px
+		+r(tablet)
+			font-size: 15px
+			line-height: 14px		
+		+r(mobile)
+			padding: 0 50px
+			+box		
 	.ico
 		margin-bottom: 20px
+		+r(tablet)
+			margin-bottom: 15px
+		+r(mobile)		
 /*-----video-----------------------------------------------------------*/
 .video
 	height: 100px
