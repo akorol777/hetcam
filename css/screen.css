@@ -100,9 +100,32 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: black;
 @media only screen and (max-width: 768px) { .main .btn { display: inline-block; font-size: 12px; padding: 10px 10px 7px; } }
 
 /*-----cam----------------------------------------------------------- */
-.cam { height: 100px; }
+.cam { background-color: #e8ecef; }
+.cam .container { padding: 0 100px; *zoom: 1; }
+.cam .container:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 1170px) { .cam .container { padding: 0 80px 0 130px; } }
+@media only screen and (max-width: 768px) { .cam .container { padding: 0; } }
+.cam .cam__img { width: 65%; min-height: 555px; float: left; background-image: url('../img/bg-cam.jpg?1409659798'); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+@media only screen and (max-width: 1170px) { .cam .cam__img { width: 58%; min-height: 280px; } }
+@media only screen and (max-width: 768px) { .cam .cam__img { width: 100%; float: none; } }
+.cam .cam__about { width: 35%; float: left; padding: 45px 0px 70px 80px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 1170px) { .cam .cam__about { width: 42%; padding: 30px 45px; } }
+@media only screen and (max-width: 768px) { .cam .cam__about { width: 100%; float: none; padding: 30px 80px; } }
+.cam .cam__content { margin-bottom: 60px; }
+@media only screen and (max-width: 1170px) { .cam .cam__content { margin-bottom: 0px; } }
+.cam .title { font-size: 30px; line-height: 27px; margin-bottom: 0; font-weight: bold; }
+@media only screen and (max-width: 1170px) { .cam .title { font-size: 16px; line-height: 14px; text-align: right; } }
+@media only screen and (max-width: 768px) { .cam .title { font-size: 20px; line-height: 18px; text-align: left; } }
+.cam .text { font-size: 22px; line-height: 22px; margin-bottom: 10px; }
+@media only screen and (max-width: 1170px) { .cam .text { font-size: 12px; line-height: 12px; text-align: right; margin-bottom: 15px; } }
+@media only screen and (max-width: 768px) { .cam .text { font-size: 14px; line-height: 14px; margin-bottom: 20px; text-align: left; } }
+.cam .btn { width: 100%; font-size: 18px; line-height: 18px; }
+@media only screen and (max-width: 1170px) { .cam .btn { font-size: 10px; line-height: 10px; letter-spacing: -0.05em; } }
+@media only screen and (max-width: 768px) { .cam .btn { font-size: 11px; line-height: 11px; padding: 7px 0; } }
 
-/*---------------------------------------------------------------- */
+/*-----benef----------------------------------------------------------- */
+.benef { height: 100px; background-color: cyan; }
+
 /*---------------------------------------------------------------- */
 /*---------------------------------------------------------------- */
 /*---------------------------------------------------------------- */
@@ -111,7 +134,7 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: black;
 .logo { float: left; font: 0/0 a; text-shadow: none; color: transparent; }
 
 /*-----nav----------------------------------------------------------- */
-.nav { float: left; margin-top: 20px; *zoom: 1; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.nav { float: left; margin-top: 20px; z-index: 2; *zoom: 1; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .nav:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 768px) { .nav { position: absolute; top: 13px; left: 0; border-right: 1px solid #e4e4e4; max-height: 0; overflow: hidden; } }
 .nav li { float: left; }
@@ -140,9 +163,9 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: black;
 @media only screen and (max-width: 1170px) { .title-small { font-size: 24px; } }
 @media only screen and (max-width: 768px) { .title-small { font-size: 12px; line-height: 20px; margin-bottom: 15px; } }
 
-.content { font-size: 24px; line-height: 28px; margin-bottom: 20px; }
-@media only screen and (max-width: 1170px) { .content { font-size: 20px; line-height: 20px; margin-bottom: 10px; } }
-@media only screen and (max-width: 768px) { .content { font-size: 10px; line-height: 10px; margin-bottom: 3px; } }
+.text { font-size: 24px; line-height: 28px; margin-bottom: 20px; }
+@media only screen and (max-width: 1170px) { .text { font-size: 20px; line-height: 20px; margin-bottom: 10px; } }
+@media only screen and (max-width: 768px) { .text { font-size: 10px; line-height: 10px; margin-bottom: 3px; } }
 
 /*----heatcam------------------------------------------------------------ */
 .heatcam { color: #fc4236; font-weight: bold; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
@@ -153,7 +176,7 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: black;
 /*-----popup----------------------------------------------------------- */
 .popup { width: 270px; background-color: white; padding: 17px 15px 15px 15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 1170px) { .popup { width: 190px; padding: 13px 11px 13px 11px; } }
-@media only screen and (max-width: 768px) { .popup { width: 160px; padding: 20px 0px 13px; } }
+@media only screen and (max-width: 768px) { .popup { width: 160px; padding: 20px 0px; } }
 .popup .popup__content { text-align: center; font-size: 18px; line-height: 16px; margin-bottom: 20px; }
 @media only screen and (max-width: 1170px) { .popup .popup__content { font-size: 12px; line-height: 11px; margin-bottom: 13px; } }
 @media only screen and (max-width: 768px) { .popup .popup__content { line-height: 10px; margin-bottom: 20px; } }
@@ -187,7 +210,7 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: black;
 .popup .btn { width: 100%; background-color: #0072bc; }
 .popup .btn:hover { background-color: #0091ef; }
 @media only screen and (max-width: 1170px) { .popup .btn { padding-top: 9px; padding-bottom: 9px; } }
-@media only screen and (max-width: 768px) { .popup .btn { letter-spacing: -0.1em; background-color: #fc4236; }
+@media only screen and (max-width: 768px) { .popup .btn { letter-spacing: -0.1em; padding-top: 6px; padding-bottom: 6px; background-color: #fc4236; }
   .popup .btn:hover { background-color: #fd7168; } }
 
 /*---------------------------------------------------------------- */
