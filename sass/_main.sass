@@ -10,6 +10,7 @@
 		border-bottom: 1px solid $border-c 
 		padding-right: 30px	
 	.logo
+		float: left
 		margin: 20px 50px 0 0 
 		+r(tablet)
 			width: 120px
@@ -528,7 +529,7 @@
 	background-color: #fff 
 	.container
 		max-width: 1100px 
-		padding: 50px 0 
+		padding: 50px 0 40px
 		+r(tablet)
 			max-width: 600px
 			padding: 25px 0 
@@ -539,9 +540,11 @@
 	.popup
 		width: 100%
 		padding: 0
-		margin-bottom: 20px
+		margin-bottom: 55px
 		+r(tablet)
-			margin-bottom: 10px
+			margin-bottom: 30px
+		+r(mobile)
+			margin-bottom: 15px			
 		.popup__input, .btn
 			float: left
 			margin: 0 0.5%
@@ -588,18 +591,48 @@
 		display: block
 		width: 100%
 		+clr
-
-
-
-
-
-  
-
-
+	.footer__bottom
+		text-align: center
+		padding: 0 20px 
+		+clr
+		+r(tablet)
+			padding: 0 10px 	
+	.footer__mail
+		font-size: 30px
+		line-height: 22px
+		font-weight: bold
+		float: right
+		+r(tablet)
+			font-size: 16px
+			line-height: 12px		
+		+r(mobile)
+			float: none
+			display: block
+			margin-bottom: 20px				
+	.footer__call
+		font-size: 29px
+		line-height: 22px
+		float: left
+		+r(tablet)
+			font-size: 16px
+			line-height: 12px
+		+r(mobile)
+			float: none		
+			display: block
+			margin-bottom: 20px				
+		.big
+			font-weight: bold
+	.logo
+		display: inline-block
+		img
+			width: 100%
+			height: auto		 
+		+r(tablet)
+			width: 130px
+			
 
 /*-----logo-----------------------------------------------------------*/
 .logo
-	float: left
 	+hide-text
 /*-----nav-----------------------------------------------------------*/
 .nav
