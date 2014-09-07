@@ -198,7 +198,28 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: black;
 @media only screen and (max-width: 1170px) { .priv .priv__item li .text { font-size: 15px; line-height: 16px; } }
 @media only screen and (max-width: 768px) { .priv .priv__item li .text { font-size: 12px; line-height: 13px; } }
 
-/*---------------------------------------------------------------- */
+/*-----install----------------------------------------------------------- */
+.install .container { padding: 40px 50px 70px; position: relative; text-align: center; }
+@media only screen and (max-width: 1170px) { .install .container { padding: 5px 50px 35px; } }
+@media only screen and (max-width: 768px) { .install .container { padding: 10px 0 20px; } }
+.install .title { font-size: 74px; line-height: 74px; margin-bottom: 65px; }
+@media only screen and (max-width: 1170px) { .install .title { font-size: 41px; margin-bottom: 20px; } }
+@media only screen and (max-width: 768px) { .install .title { font-size: 22px; line-height: 22px; } }
+.install .install__img-out { margin: 0 auto; width: 900px; position: relative; }
+@media only screen and (max-width: 1170px) { .install .install__img-out { width: 500px; } }
+@media only screen and (max-width: 768px) { .install .install__img-out { width: 265px; } }
+.install .install__img { width: 100%; height: auto; }
+.install .install__item-1, .install .install__item-2 { position: absolute; font-size: 43px; }
+@media only screen and (max-width: 1170px) { .install .install__item-1, .install .install__item-2 { font-size: 24px; } }
+@media only screen and (max-width: 768px) { .install .install__item-1, .install .install__item-2 { font-size: 13px; } }
+.install .install__item-1 { top: -5%; right: -4%; }
+@media only screen and (max-width: 768px) { .install .install__item-1 { right: -5%; } }
+.install .install__item-2 { top: 79.5%; left: -5%; }
+@media only screen and (max-width: 768px) { .install .install__item-2 { top: 77%; } }
+
+/*-----rate----------------------------------------------------------- */
+.rate { height: 100px; background: magenta; }
+
 /*---------------------------------------------------------------- */
 /*-----logo----------------------------------------------------------- */
 .logo { float: left; font: 0/0 a; text-shadow: none; color: transparent; }
