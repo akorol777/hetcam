@@ -217,7 +217,7 @@
 			font-size: 15px
 			line-height: 14px		
 		+r(mobile)
-			padding: 0 50px
+			padding: 0 30px
 			+box		
 	.ico
 		margin-bottom: 20px
@@ -419,21 +419,113 @@
 			font-size: 13px		
 	.install__item-1
 		top: -5%
-		right: -4%
+		right: -5%
 		+r(mobile)
-			right: -5%			
+			top: -6%	
+			right: -6%		
 	.install__item-2
 		top: 79.5%
-		left: -5%
+		left: -6%
 		+r(mobile)	
-			top: 77%		 
+			top: 77%
+			left: -7%		 
 
 /*-----rate-----------------------------------------------------------*/
 .rate
-	height: 100px
-	background: #f0f 
-/*----------------------------------------------------------------*/
+	background-image: image-url('bg-rate.jpg')
+	+cover
+	.container
+		padding: 85px 0 100px
+		text-align: center
+		+r(tablet)
+			padding: 75px 0 60px
+		+r(mobile)
+			padding: 15px 0 30px
+	.title
+		color: #fff 
+		font-size: 74px
+		margin-bottom: 95px
+		+r(tablet)
+			font-size: 40px
+			line-height: 40px
+			margin-bottom: 55px
+		+r(mobile)
+			font-size: 33px
+			line-height: 33px
+			margin-bottom: 15px		
+	.rate__item
+		display: inline-block
+		padding: 0 20px 
+		+clr
+		+r(tablet)
+		+r(mobile)		
+		li
+			float: right
+			width: 285px
+			height: 370px
+			background-color: #FFF
+			border: 1px solid #d7d7d7
+			position: relative
+			margin-top: 20px   
+			+box
+			+r(tablet)
+				height: 200px
+				width: 150px
+				margin-top: 12px
+			+r(mobile)	
+				float: none	
+				margin-top: 0	
+		.rate__item-recomend
+			height: 405px
+			border: 7px solid #FC4236 
+			margin-top: 0
+			+r(tablet)
+				height: 225px
+				margin-top: 0
+			+r(mobile)			
+			.btn
+				bottom: 34px 
+				+r(tablet)
+					bottom: 22px
+				+r(mobile)
+	.rate__label
+		display: block
+		width: 140px
+		margin: 0 auto 
+		background-color: #FC4236
+		color: #fff
+		padding: 0px 0px 2px 0px
+		font-family: $Sans_b
+		font-size: 12px
+		line-height: 12px 
+		+r(tablet)
+			font-size: 7px
+			line-height: 7px
+			width: 75px
+			margin-top: -5px
+		+r(mobile)	
+			font-size: 7px 		
+	.btn	
+		position: absolute
+		bottom: 25px
+		width: 230px
+		left: 50%
+		margin-left: -115px 
+		font-size: 17px
+		line-height: 17px
+		letter-spacing: -0.07em
+		+r(tablet)
+			width: 125px
+			margin-left: -62px
+			font-size: 9px
+			line-height: 9px
+			bottom: 15px
+		+r(mobile) 
 
+/*-----footer-----------------------------------------------------------*/
+.footer
+	height: 100px
+	background-color: #fff 
 
 
 

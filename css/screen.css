@@ -144,7 +144,7 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: black;
 @media only screen and (max-width: 768px) { .benef .benef-item li { float: none; width: 100%; padding: 20px 60px 0; } }
 .benef .benef__text { font-size: 24px; line-height: 22px; }
 @media only screen and (max-width: 1170px) { .benef .benef__text { font-size: 15px; line-height: 14px; } }
-@media only screen and (max-width: 768px) { .benef .benef__text { padding: 0 50px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } }
+@media only screen and (max-width: 768px) { .benef .benef__text { padding: 0 30px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } }
 .benef .ico { margin-bottom: 20px; }
 @media only screen and (max-width: 1170px) { .benef .ico { margin-bottom: 15px; } }
 
@@ -212,15 +212,37 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: black;
 .install .install__item-1, .install .install__item-2 { position: absolute; font-size: 43px; }
 @media only screen and (max-width: 1170px) { .install .install__item-1, .install .install__item-2 { font-size: 24px; } }
 @media only screen and (max-width: 768px) { .install .install__item-1, .install .install__item-2 { font-size: 13px; } }
-.install .install__item-1 { top: -5%; right: -4%; }
-@media only screen and (max-width: 768px) { .install .install__item-1 { right: -5%; } }
-.install .install__item-2 { top: 79.5%; left: -5%; }
-@media only screen and (max-width: 768px) { .install .install__item-2 { top: 77%; } }
+.install .install__item-1 { top: -5%; right: -5%; }
+@media only screen and (max-width: 768px) { .install .install__item-1 { top: -6%; right: -6%; } }
+.install .install__item-2 { top: 79.5%; left: -6%; }
+@media only screen and (max-width: 768px) { .install .install__item-2 { top: 77%; left: -7%; } }
 
 /*-----rate----------------------------------------------------------- */
-.rate { height: 100px; background: magenta; }
+.rate { background-image: url('../img/bg-rate.jpg?1410110366'); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.rate .container { padding: 85px 0 100px; text-align: center; }
+@media only screen and (max-width: 1170px) { .rate .container { padding: 75px 0 60px; } }
+@media only screen and (max-width: 768px) { .rate .container { padding: 15px 0 30px; } }
+.rate .title { color: white; font-size: 74px; margin-bottom: 95px; }
+@media only screen and (max-width: 1170px) { .rate .title { font-size: 40px; line-height: 40px; margin-bottom: 55px; } }
+@media only screen and (max-width: 768px) { .rate .title { font-size: 33px; line-height: 33px; margin-bottom: 15px; } }
+.rate .rate__item { display: inline-block; padding: 0 20px; *zoom: 1; }
+.rate .rate__item:after { content: " "; display: table; clear: both; }
+.rate .rate__item li { float: right; width: 285px; height: 370px; background-color: white; border: 1px solid #d7d7d7; position: relative; margin-top: 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 1170px) { .rate .rate__item li { height: 200px; width: 150px; margin-top: 12px; } }
+@media only screen and (max-width: 768px) { .rate .rate__item li { float: none; margin-top: 0; } }
+.rate .rate__item .rate__item-recomend { height: 405px; border: 7px solid #fc4236; margin-top: 0; }
+@media only screen and (max-width: 1170px) { .rate .rate__item .rate__item-recomend { height: 225px; margin-top: 0; } }
+.rate .rate__item .rate__item-recomend .btn { bottom: 34px; }
+@media only screen and (max-width: 1170px) { .rate .rate__item .rate__item-recomend .btn { bottom: 22px; } }
+.rate .rate__label { display: block; width: 140px; margin: 0 auto; background-color: #fc4236; color: white; padding: 0px 0px 2px 0px; font-family: opensans-bold, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 12px; }
+@media only screen and (max-width: 1170px) { .rate .rate__label { font-size: 7px; line-height: 7px; width: 75px; margin-top: -5px; } }
+@media only screen and (max-width: 768px) { .rate .rate__label { font-size: 7px; } }
+.rate .btn { position: absolute; bottom: 25px; width: 230px; left: 50%; margin-left: -115px; font-size: 17px; line-height: 17px; letter-spacing: -0.07em; }
+@media only screen and (max-width: 1170px) { .rate .btn { width: 125px; margin-left: -62px; font-size: 9px; line-height: 9px; bottom: 15px; } }
 
-/*---------------------------------------------------------------- */
+/*-----footer----------------------------------------------------------- */
+.footer { height: 100px; background-color: white; }
+
 /*-----logo----------------------------------------------------------- */
 .logo { float: left; font: 0/0 a; text-shadow: none; color: transparent; }
 
