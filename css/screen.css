@@ -276,7 +276,7 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: black;
 @media only screen and (max-width: 768px) { .footer .footer__mail { float: none; display: block; margin-bottom: 20px; } }
 .footer .footer__call { font-size: 29px; line-height: 22px; float: left; }
 @media only screen and (max-width: 1170px) { .footer .footer__call { font-size: 16px; line-height: 12px; } }
-@media only screen and (max-width: 768px) { .footer .footer__call { float: none; display: block; margin-bottom: 20px; } }
+@media only screen and (max-width: 768px) { .footer .footer__call { float: none; display: block; margin-bottom: 20px; letter-spacing: -0.05em; } }
 .footer .footer__call .big { font-weight: bold; }
 .footer .logo { display: inline-block; }
 .footer .logo img { width: 100%; height: auto; }
