@@ -526,6 +526,68 @@
 .footer
 	height: 100px
 	background-color: #fff 
+	.container
+		max-width: 1100px 
+		padding: 50px 0 
+		+r(tablet)
+			max-width: 600px
+			padding: 25px 0 
+		+r(mobile)
+			max-width: 160px
+			min-width: 0
+			padding: 20px 0  	
+	.popup
+		width: 100%
+		padding: 0
+		margin-bottom: 20px
+		+r(tablet)
+			margin-bottom: 10px
+		.popup__input, .btn
+			float: left
+			margin: 0 0.5%
+			height: 51px
+			+box
+			+r(tablet)
+				height: 28px
+			+r(mobile)
+				float: none
+				margin-bottom: 10px
+		.popup__input
+			width: 22.5%
+			font-size: 16px
+			line-height: 24px
+			+r(tablet)
+				font-size: 9px
+				line-height: 13px	
+			+r(mobile)			
+				width: 100%	
+		.btn	
+			background-color: $btn-c 
+			border-bottom: 1px solid #AF2117
+			width: 28.5%  
+			font-size: 21px
+			line-height: 26px
+			letter-spacing: -0.05em 
+			&:hover
+				background-color: lighten($btn-c, 10%)
+				border-color: lighten($btn-c, 20%)
+			+r(tablet)
+				font-size: 11px
+				line-height: 10px	
+				letter-spacing: 0	
+			+r(mobile)
+				width: 100%
+				float: none	
+				font-size: 9px
+				height: 23px
+		.popup__content
+			display: none
+			+r(mobile)
+				display: block			
+	.popup__form
+		display: block
+		width: 100%
+		+clr
 
 
 
@@ -687,6 +749,7 @@
 		font-family: $Sans
 		padding: 10px 15px
 		margin-bottom: 15px
+		background-color: #FBFBFB 
 		+box
 		+transition
 		+r(tablet)
@@ -704,7 +767,8 @@
 			+r(mobile)
 				font-size: 8px
 		&:focus
-			border: 2px solid #0072BC	
+			border: 2px solid #0072BC
+			background-color: #fff 	
 			+placeholder
 				font-size: 0 						
 	.btn
