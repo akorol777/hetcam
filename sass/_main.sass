@@ -87,6 +87,7 @@
 	background-color: #e8ecef
 	.container
 		padding: 0 100px
+		position: relative
 		+clr
 		+r(tablet)
 			padding: 0 80px 0 130px
@@ -159,7 +160,14 @@
 		+r(mobile)
 			font-size: 11px
 			line-height: 11px	
-			padding: 7px 0			
+			padding: 7px 0	
+	.popup
+		position: absolute
+		top: 20px
+		left: -100% 
+		+transition
+	.popup-open					
+		left: 20px
 /*-----benef-----------------------------------------------------------*/
 .benef
 	.container
@@ -234,6 +242,7 @@
 	.container
 		position: relative
 		padding: 145px 115px 135px
+		position: relative
 		+clr
 		+r(tablet)
 			padding: 145px 60px 120px 
@@ -310,7 +319,21 @@
 			&:hover
 				+transform(scale(1.05))				
 		+r(mobile)	
-			right: 20px			
+			right: 20px	
+	.popup
+		position: absolute
+		top: 20px
+		right: -100% 
+		+transition
+	.popup-open					
+		right: 20px
+	.popup-video	
+		position: absolute
+		top: 20px
+		right: -100% 
+		+transition
+	.video-open
+		right: 20px 							
 /*-----priv-----------------------------------------------------------*/
 .priv
 	background-image: image-url('bg-priv.jpg')
@@ -818,7 +841,90 @@
 			padding-bottom: 6px			
 			background-color: $btn-c 
 			&:hover
-				background-color: lighten($btn-c, 10%) 						  			
+				background-color: lighten($btn-c, 10%)
+.popup__close
+	position: absolute
+	top: -35px
+	right: 15px
+	color: #FFF
+	font-size: 15px
+	line-height: 40px
+	+r(tablet)
+		font-size: 12px
+		line-height: 27px
+		top: -27px	
+	+r(mobile)
+		top: -22px
+	&:after
+		content: "" 
+		position: absolute
+		+s(i-close)
+		top: 17px
+		right: -17px
+		+r(tablet)
+			+transform(scale(0.7))
+			top: 8px
+			right: -14px				
+		+r(mobile) 			 
+.popup-mod	
+	position: absolute
+	width: 340px
+	padding: 20px
+	color: #000 
+	+r(tablet)
+		width: 235px
+		padding: 15px
+	+r(mobile)
+		padding: 15px 5px	
+	.popup__content
+		font-size: 22px
+		line-height: 20px
+		margin-bottom: 25px
+		+r(tablet)
+			font-size: 15px
+			line-height: 14px
+			margin-bottom: 20px
+		+r(mobile)
+	.popup__form			
+		.popup__input
+			font-size: 16px
+			line-height: 24px
+			margin-bottom: 25px
+			+r(tablet)
+				font-size: 11px
+				line-height: 16px
+				margin-bottom: 15px
+			+r(mobile)
+				font-size: 11px
+				line-height: 16px
+				+placeholder
+					font-size: 11px
+					line-height: 16px
+		.btn
+			background-color: $btn_mod-c
+			border: none
+			padding-left: 0
+			padding-right: 0
+			font-size: 17px
+			line-height: 22px
+			+r(mobile)
+				font-size: 12px
+				line-height: 15px
+				padding: 9px 0 
+			&:hover
+				background-color: lighten($btn_mod-c, 10%)
+.popup-video
+	.popup__video-out
+		width: 570px
+		+r(tablet)
+			width: 455px
+		+r(mobile)
+			width: 280px 	
+		img
+			width: 100%
+			height: auto 				
+											
+									  			
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
