@@ -48,6 +48,7 @@ $(document).ready(function() {
 		$('.nav').removeClass('nav-open');
 		$('#popup1').removeClass('popup-open');	
 		$('#popup2').removeClass('popup-open');
+		$('#popup3').removeClass('popup-open');		
 		$('#popup-video').removeClass('video-open');											
 	});
 

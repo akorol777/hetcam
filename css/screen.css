@@ -176,9 +176,9 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: black;
 @media only screen and (max-width: 1170px) { .video .video__play { top: 44%; right: 42%; background: url('../img/icons-s4994d2ad84.png') 0 -549px no-repeat; width: 48px; height: 48px; }
   .video .video__play:hover { -webkit-transform: scale(1.05); -moz-transform: scale(1.05); -ms-transform: scale(1.05); -o-transform: scale(1.05); transform: scale(1.05); } }
 @media only screen and (max-width: 768px) { .video .video__play { right: 20px; } }
-.video .popup { position: absolute; top: 20px; right: -100%; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.video .popup { position: absolute; top: 20px; right: 200%; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .video .popup-open { right: 20px; }
-.video .popup-video { position: absolute; top: 20px; right: -100%; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.video .popup-video { position: absolute; top: 20px; right: 200%; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .video .video-open { right: 20px; }
 
 /*-----priv----------------------------------------------------------- */
