@@ -106,11 +106,11 @@
 	.cam__about
 		width: 35%
 		float: left
-		padding: 45px 0px 70px 80px
+		padding: 45px 0px 0px 80px
 		+box
 		+r(tablet)
 			width: 42%
-			padding: 30px 45px			
+			padding: 30px 45px 0 45px			
 		+r(mobile)
 			width: 100%
 			float: none
@@ -226,9 +226,160 @@
 		+r(mobile)		
 /*-----video-----------------------------------------------------------*/
 .video
-	height: 100px
-	background: #f0f 
-/*----------------------------------------------------------------*/
+	background-color: #c7c7c7 
+	background-image: image-url('bg-video.jpg')
+	color: #FFF 
+	+cover 
+	.container
+		position: relative
+		padding: 145px 115px 135px
+		+clr
+		+r(tablet)
+			padding: 145px 60px 120px 
+		+r(mobile)
+			padding: 110px 20px 90px 				
+	.video-in
+		float: left
+		width: 390px
+		+r(tablet)
+			width: 170px
+		+r(mobile)		
+	.heatcam
+		font-size: 74px
+		line-height: 74px
+		margin-bottom: 20px
+		display: inline-block
+		+r(tablet)
+			font-size: 30px
+			line-height: 30px
+			margin-bottom: 10px
+		+r(mobile)
+			font-size: 30px
+			line-height: 30px
+			margin-bottom: 5px		
+	.title
+		font-size: 44px
+		line-height: 40px
+		margin-bottom: 45px
+		+r(tablet)
+			margin-bottom: 15px
+		+r(mobile)		
+			font-size: 18px
+			line-height: 16px
+			margin-bottom: 20px
+	.btn
+		font-size: 21px
+		line-height: 21px
+		padding: 13px 20px 15px
+		border-bottom: 2px solid #AF2117
+		margin-bottom: 10px
+		&:hover
+			border-color: lighten(#AF2117, 20%)					
+		+r(tablet)
+			font-size: 8px
+			line-height: 8px
+			padding: 7px 7px 4px
+			margin-bottom: 5px 
+		+r(mobile)		  
+	.text, .link
+		font-size: 21px
+		line-height: 21px
+		+r(tablet)
+			font-size: 8px
+			line-height: 8px
+		+r(mobile)		
+	.link
+		text-decoration: underline
+		font-weight: bold
+		color: #FFF 
+		&:hover
+			text-decoration: none	
+	.video__play
+		position: absolute
+		top: 42%
+		right: 7%
+		+s(i-play)
+		+transition
+		&:hover
+			+transform(scale(1.1))
+		+r(tablet)
+			top: 44%
+			right: 42%
+			+s(i-play-tablet)	
+			&:hover
+				+transform(scale(1.05))				
+		+r(mobile)	
+			right: 20px			
+					
+/*-----priv-----------------------------------------------------------*/
+.priv
+	background-image: image-url('bg-priv.jpg')
+	color: #FFF 
+	+cover 
+	.container
+		padding: 45px 150px 0
+		+r(tablet)
+			padding: 40px 50px 0 
+		+r(mobile) 
+			padding: 20px 20px 15px
+	.title
+		text-align: center
+		font-size: 74px
+		line-height: 74px
+		margin-bottom: 75px
+		+r(tablet)
+			font-size: 40px
+			line-height: 40px
+			margin-bottom: 25px
+		+r(mobile)
+			font-size: 27px
+			line-height: 27px
+			margin-bottom: 0
+	.priv__item
+		+clr
+		li
+			text-align: center
+			float: left
+			width: 33.33%
+			padding: 0px 40px
+			min-height: 230px  	
+			+box
+			+r(tablet)
+				min-height: 170px 
+				padding: 0 30px 
+			+r(mobile)
+				width: 100%
+				min-height: 0
+				margin-bottom: 0
+				padding: 0 60px  
+			.ico
+				margin-bottom: 5px
+				+r(tablet)
+					margin-bottom: 0
+					+transform(scale(0.75))
+				+r(mobile)
+					+transform(scale(0.6))					
+					margin-bottom: -5px 
+			.title
+				font-size: 24px
+				line-height: 28px
+				margin-bottom: 0
+				font-weight: bold
+				+r(tablet)
+					font-size: 18px
+					line-height: 22px
+				+r(mobile)
+					font-size: 14px
+					line-height: 17px
+			.text
+				font-size: 20px
+				line-height: 21px
+				+r(tablet)
+					font-size: 15px
+					line-height: 16px
+				+r(mobile)
+					font-size: 12px
+					line-height: 13px
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
 
