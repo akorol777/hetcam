@@ -14,7 +14,7 @@
 		margin: 20px 50px 0 0 
 		+r(tablet)
 			width: 120px
-			margin-right: 35px
+			margin-right: 27px
 		+r(mobile)
 			width: 90px
 			margin-top: 10px
@@ -44,27 +44,42 @@
 		display: block	
 		+r(mobile)
 			display: none
-	
 /*-----main-----------------------------------------------------------*/
 .main-out
 	position: relative
 	.popup-out
 		position: absolute
 		top: 140px
-		right: 100% 
+		right: 10%
 		display: inline-block
 		+transition
 		+r(tablet)
-			top: 95px
+			top: 105px
+			right: 7% 
 		+r(mobile)
 			position: static
 			display: block
-	.popup-open		
-		right: 10%
-		+r(tablet)		
-			right: 20%
+			right: 20%	
 	.popup
-		margin: 0 auto 				
+		margin: 0 auto 
+		.popup__content
+			+r(mobile)
+				line-height: 12px 
+	#popup2
+		position: fixed
+		top: 10%
+		left: -100% 
+		margin-left: -160px
+		z-index: 10 
+		+transition
+		+r(tablet)
+			margin-left: -117px 
+		.btn
+			+r(tablet)
+				font-size: 10px
+				line-height: 10px	
+	#popup2.popup-open					
+		left: 50%						
 .main
 	background-image: image-url('bg-main.jpg')
 	color: #FFF 
@@ -127,6 +142,7 @@
 		line-height: 27px
 		margin-bottom: 0
 		font-weight: bold
+		white-space: nowrap
 		+r(tablet)
 			font-size: 16px
 			line-height: 14px
@@ -153,6 +169,7 @@
 		width: 100%	
 		font-size: 18px
 		line-height: 18px 
+		letter-spacing: -0.07em 
 		+r(tablet)
 			font-size: 10px
 			line-height: 10px
@@ -161,13 +178,6 @@
 			font-size: 11px
 			line-height: 11px	
 			padding: 7px 0	
-	.popup
-		position: absolute
-		top: 20px
-		left: -100% 
-		+transition
-	.popup-open					
-		left: 20px
 /*-----benef-----------------------------------------------------------*/
 .benef
 	.container
@@ -319,21 +329,7 @@
 			&:hover
 				+transform(scale(1.05))				
 		+r(mobile)	
-			right: 20px	
-	.popup
-		position: absolute
-		top: 20px
-		right: 200% 
-		+transition
-	.popup-open					
-		right: 20px
-	.popup-video	
-		position: absolute
-		top: 20px
-		right: 200% 
-		+transition
-	.video-open
-		right: 20px 							
+			right: 20px					 							
 /*-----priv-----------------------------------------------------------*/
 .priv
 	background-image: image-url('bg-priv.jpg')
@@ -653,6 +649,23 @@
 			height: auto		 
 		+r(tablet)
 			width: 130px
+.overlay
+	position: fixed
+	z-index: 9
+	width: 100%
+	height: 0	
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background-color: #000
+	display: none
+	display: block	
+	+opacity(0.7)
+	+transition
+.overlay-open
+	height: 100%
+
 			
 
 /*-----logo-----------------------------------------------------------*/
@@ -885,7 +898,6 @@
 			font-size: 15px
 			line-height: 14px
 			margin-bottom: 20px
-		+r(mobile)
 	.popup__form			
 		.popup__input
 			font-size: 16px
@@ -914,18 +926,36 @@
 				padding: 9px 0 
 			&:hover
 				background-color: lighten($btn_mod-c, 10%)
-.popup-video
-	.popup__video-out
-		width: 570px
+.popup-video	
+	position: fixed
+	z-index: 10
+	top: 10%
+	right: 200% 
+	margin-right: -245px
+	+transition
+	+r(mobile)
+		margin-right: -160px 
+	.popup__close
 		+r(tablet)
-			width: 455px
+			right: 15px
+.video-open
+	right: 50%
+.popup__video-out
+	iframe
+		width: 490px
+		height: 320px	
 		+r(mobile)
-			width: 280px 	
-		img
-			width: 100%
-			height: auto 				
-											
-									  			
-/*----------------------------------------------------------------*/
-/*----------------------------------------------------------------*/
-/*----------------------------------------------------------------*/
+			width: 320px
+			height: 180px 												
+#popup3
+	position: fixed
+	top: 10%
+	right: 200% 
+	z-index: 10
+	margin-right: -170px
+	+transition
+	+r(tablet)
+		margin-right: -117px
+	+r(mobile)
+#popup3.popup-open					
+	right: 50%				
